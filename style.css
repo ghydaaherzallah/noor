@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: white;
+}
+
+ul{
+    list-style:none ;
+}
+a{ 
+    text-decoration: none;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+/*Utitle Classes*/
+.primary-text{
+    color: purple;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary{
+    color:purple;
+    border: 1px solid black;
+}
+
+.btn-secondary{
+    color: white;
+    background: purple;
+    margin-top: 2rem;
+}
+.btn-primary:hover,
+.btn-secondary:hover{
+    background-color:b;
+}
+/*header start*/
+header{
+    height: 100vh;
+    background: url('img/الواجهة.jpg')  center/cover no-repeat;
+    position: relative;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+}
+#navbar img{
+    width:110px ;
+    margin-left: 110px;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+#navbar ul li a{
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+}
+#navbar ul li a:hover{
+border-bottom: 2px solid purple;
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+header .content h1{
+    font-size: 40px;
+    color: black;
+}
+header .content p{
+    margin: 20px 0 40px;
+    color:black;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+}
+header *{
+z-index: 10;
+}
+/*header end*/
+/*about start*/
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+#about .title,
+#offers .title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#about h2,
+#offers h2,
+#gallery h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#about h2
+{
+    color:purple;
+}
+#about .title p{
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+}
+#about .about-content{
+display: flex;
+justify-content: space-between;
+}
+#about .about-content img{
+    width: 450px;
+}
+#about .about-content p{
+    color: black;
+    margin-right: 7rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+/*about end*/
+/*offers start*/
+#offers{
+    padding: 30px 0;
+    height: 80vs;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+#offers h2{
+    color: purple;
+}
+#offers  .title p{
+    color: black;
+    font-weight: 700;
+}
+#offers .offers-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: wheat;
+}
+#offers .offers-items img{
+    width: 200px;  
+}
+#offers .offers-items h3{
+    font-size: 25px;
+    margin: 15px 0;
+    color: purple;
+}
+#offers .offers-items p{
+    font-size: 14pxs;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: black;
+}
+#offers .offers-items span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+    color: purple;
+}
+/*offers end*/
+/*gallery start*/
+#gallery{
+    padding: 50px 0 20px;
+}
+#gallery h2{
+    color: purple;
+    text-align: center;
+}
+#gallery .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+#gallery .img-gallery img{
+    width: 250px;
+    height: 200px;
+    margin: 60px;
+}
+/*gallery end*/
+/*contact start*/
+#contact{
+    padding: 5rem 0;
+    background: white;
+}
+#contact .container{
+    max-width: 900px;
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+#contact .contact-content .contact-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+#contact .contact-content .contact-info h3{
+    font-size: 28px;
+    color: purple;
+    margin-bottom: 10px;
+}
+#contact .contact-content .contact-info p{
+    color: black;
+}
+form{
+ width: 50%;
+}
+form input,
+textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color:whitesmoke;
+}
+#contact .btn{
+    background: purple;
+    color: white;
+    cursor: pointer;
+}
+#contact .btn:hover{
+    background-color: white;
+}
+/*contact end*/
+/*footer start*/
+#footer{
+    background: purple;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+}
+/*footer end*/
